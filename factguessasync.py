@@ -59,13 +59,13 @@ class Player(telepot.aio.helper.ChatHandler):
             response = requests.get('http://numbersapi.com/'+ str(guess), headers=headers, params=params)
             # give a descriptive hint
             hint = self._hint(self._answer, guess)
-            await self.sender.sendMessage(response.text + "\n" +hint )
+            await self.sender.sendMessage( "try something " + hint + " and btw...\n" + response.text)
         else:
             await self.sender.sendMessage('Correct!')
             self.close()
 
     async def on__idle(self, event):
-        await self.sender.sendMessage('Game expired. The answer is %d. Please Frequent the @VergeZoo' % self._answer)
+        await self.sender.sendMessage('Game expired. The answer is %d.\nPlease frequent the @VergeZoo \nCalling out  @XVGPufferfish,  @GorillaChain, @Simple_Dolphin, and @XVGHawk' % self._answer)
         self.close()
 
 
