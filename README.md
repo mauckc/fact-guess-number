@@ -1,5 +1,6 @@
 # fact-guess-number
 Telegram Bot for guessing a number and returning hints and facts.
+Using async and using calls to numbersapi
 
 ### Requrements
 Using python 3.5+
@@ -12,7 +13,7 @@ $ pip install telepot
 ```
 
 ```
-$ python3.5 guessa.py <token>
+$ python3.5 factguessa.py <token>
 ```
 
 ### Bot Logic Structure
